@@ -1,9 +1,12 @@
 <!doctype html>
-<html lang="Default">
+<!-- recommandation n°22 indiquer langue du site pour une meilleure accessibilité -->
+<html lang="fr">
 <head>
     <meta charset="utf-8">
     <meta name="keywords" content="">
-    <meta name="description" content="">
+    <!-- recommandation n°24 rédaction avec attention de la description -->
+	<meta name="description"
+	content="notre agence de webdesign vous intéresse collaborons ensemble, parlez nous de votre projet, remplissez le formulaire">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <link rel="shortcut icon" type="image/png" href="favicon.jpg">
     
@@ -13,12 +16,14 @@
 	<link rel="stylesheet" type="text/css" href="./css/et-line.min.css">
 	
     
-	<script src="./js/jquery-2.1.0.min.js"></script>
-	<script src="./js/bootstrap.min.js"></script>
-	<script src="./js/blocs.min.js"></script>
-	<script src="./js/jqBootstrapValidation.js"></script>
-	<script src="./js/formHandler.js"></script>
-    <title>page2</title>
+	<!-- recommandation n°31 minifier et utilisation de defer -->
+	<script src="./js/jquery-2.1.0.min.js" defer></script>
+	<script src="./js/bootstrap.min.js" defer></script>
+	<script src="./js/blocs.min.js" defer></script>
+	<script src="./js/jquery.touchSwipe.min.js" defer></script>
+	<script src="./js/gmaps.min.js" defer></script>
+
+    <title>collaborons parlez nous de vous</title>
 
     
 <!-- Analytics -->
@@ -48,7 +53,7 @@
 					<li>
 					</li>
 					<li>
-						<a href="page2.html">page2 &gt;</a>
+						<a href="page2.html">Contactez nous</a>
 					</li>
 				</ul>
 			</div>
@@ -62,10 +67,10 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-12">
-				<h1 class="text-center hero-bloc-text tc-white">
+				<h1 id="title_color" class="text-center hero-bloc-text tc-white">
 					Parlons web design !
 				</h1>
-				<p class="text-center mg-lg tc-white tight-width-whitespace">
+				<p id="p_color" class="text-center mg-lg tc-white tight-width-whitespace">
 					Nous sommes ravis que vous souhaitiez collaborer avec notre agence.<br>
 					Parlez-nous de votre projet en complétant le formulaire ci-dessous.
 				</p>
@@ -80,34 +85,37 @@
 	<div class="container bloc-lg">
 		<div class="row">
 			<div class="col-sm-6">
-				<form id="form_1" novalidate success-msg="Your message has been sent." fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
-					<div class="form-group">
-						<label>
-							Nom
-						</label>
-						<input id="name" class="form-control" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Adresse email
-						</label>
-						<input id="email" class="form-control" type="email" required />
-					</div>
-					<div class="form-group">
-						<label>
-							Comment nous avez-vous connu ?
-						</label>
-						<input class="form-control" type="email" required id="input_504" />
-					</div>
-					<div class="form-group">
-						<label>
-							Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
-						</label><textarea id="message" class="form-control" rows="4" cols="50" required></textarea>
-					</div> 
-					<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine" type="submit">
-						Envoyer
-					</button>
-				</form>
+				<form id="form_1" novalidate success-msg="Your message has been sent."
+							fail-msg="Sorry it seems that our mail server is not responding, Sorry for the inconvenience!">
+							<div class="form-group">
+								<label for="name">
+									Nom
+								</label>
+								<input id="name" class="form-control" required placeholder="votre nom" autofocus/>
+							</div>
+							<div class="form-group">
+								<label for="email">
+									Adresse email
+								</label>
+								<input id="email" class="form-control" type="email" required placeholder="votreadresse@email.fr"/>
+							</div>
+							<div class="form-group">
+								<label for="form-control">
+									Comment nous avez-vous connu ?
+								</label>
+								<input class="form-control" type="email" required id="input_504" />
+							</div>
+							<div class="form-group">
+								<label for="message">
+									Brief de votre projet (Ajoutez autant de détails que nécessaire)<br>
+								</label><textarea id="message" class="form-control" rows="4" cols="50"
+									required></textarea>
+							</div>
+							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine btn-clean btn-rd" 
+								type="submit">
+								Envoyer
+						</button>
+						</form>
 			</div>
 			<div class="col-sm-6">
 				<p>

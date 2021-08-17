@@ -1044,6 +1044,9 @@ h4 {
 }
 
 /* //////////////// Ajout par anousone //////////////////  */
+
+/* page d'accueil */
+
 /* citation la chouette agence de maxime G */
 blockquote {
     padding: 10px 56px;
@@ -1070,4 +1073,11 @@ q::before {
 
 q::after {
     content: close-quote;
+}
+
+/* page 2 formulaire */
+
+#title_color,
+#p_color {
+    color: white !important;
 }
