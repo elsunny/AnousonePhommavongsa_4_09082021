@@ -1040,3 +1040,32 @@ h4 {
         text-align: center;
     }
 }
+
+/* //////////////// Ajout par anousone //////////////////  */
+/* citation la chouette agence de maxime G */
+blockquote {
+    padding: 10px 56px;
+    margin: 0 0 20px;
+    border-left: initial; /* supprime la barre grise sur la gauche de la citation */
+}
+
+blockquote h2 {
+    font-size: 20px;
+}
+
+blockquote small::before {
+    content: initial; /* supprime le trait gris à droite de l'auteur */
+}
+
+/* change la forme des guillemets */
+q {
+    quotes: "“" "”";
+}
+
+q::before {
+    content: open-quote;
+}
+
+q::after {
+    content: close-quote;
+}
