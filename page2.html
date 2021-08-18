@@ -47,12 +47,12 @@
 			</div>
 			<div class="collapse navbar-collapse navbar-1 special-dropdown-nav">
 				<ul class="site-navigation nav navbar-nav">
-					<li>
+					<li tabindex="0">
 						<a href="index.html">Accueil</a>
 					</li>
 					<li>
 					</li>
-					<li>
+					<li tabindex="0">
 						<a href="page2.html">Contactez nous</a>
 					</li>
 				</ul>
@@ -91,7 +91,7 @@
 								<label for="name">
 									Nom
 								</label>
-								<input id="name" class="form-control" required placeholder="votre nom" autofocus/>
+								<input id="name" class="form-control" required placeholder="votre nom"/>
 							</div>
 							<div class="form-group">
 								<label for="email">
@@ -111,17 +111,13 @@
 								</label><textarea id="message" class="form-control" rows="4" cols="50"
 									required></textarea>
 							</div>
-							<button class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine btn-clean btn-rd" 
+							<input tabindex="0" class="bloc-button btn btn-lg btn-block cta-hero btn-atomic-tangerine btn-clean btn-rd" 
 								type="submit">
-								Envoyer
-						</button>
+								
+						</input>
 						</form>
 			</div>
-			<div class="col-sm-6">
-				<p>
-					contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
-				</p>
-			</div>
+			
 		</div>
 	</div>
 </div>
@@ -140,6 +136,9 @@
 				<p class="text-center white">
 					La chouette agence - Agence web basée à Lyon.<br>
 				</p>
+					<p class="text-center white">
+						contact@lachouetteagence.com<br>2 place Sathonay 69001 Lyon<br>Ouvert de 9h à 18h, du lundi au vendredi<br>
+					</p>
 				<div class="row row-no-gutters social">
 					<div class="col-sm-3">
 						<div class="text-center">
