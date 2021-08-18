@@ -782,13 +782,18 @@ h4 {
 }
 
 .btn-atomic-tangerine {
-    background: #F3976C;
-    color: #FFFFFF!important;
+    /* background: #F3976C;
+    color: #FFFFFF!important; */
+    background: #FFFFFF;
+    color: #F3976C!important;
+    border: solid 1px #F3976C;
 }
 
 .btn-atomic-tangerine:hover {
-    background: #c27956!important;
-    color: #FFFFFF!important;
+    /* background: #c27956!important;
+    color: #FFFFFF!important; */
+    background: #fcf3f3;
+    color: #c27956!important;
 }
 
 .ltc-white {
